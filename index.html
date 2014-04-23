@@ -6346,7 +6346,7 @@ body { font-family: Arial; }
 #singlesafety { text-align: left; padding: 5px; border-top: 2px solid #009900; top: -25px; position: relative; }
 
 #main { position: relative; text-align: center; margin: 0px auto; width: 808px; }
-#logo { width: 50%; height: 50%; }
+#logo { width: 296px; height: 74px; }
 		
 #paperarea { min-height: 120px; display: none; }
 #paperarea .keyarea { border: 2px solid #009900; border-top: 0; }
@@ -6594,10 +6594,10 @@ body { font-family: Arial; }
 				
 				<div id="singlesafety">
 					<p id="singletip1"><b>A Riecoin wallet</b> is as simple as a single pairing of a Riecoin address with its corresponding Riecoin private key. Such a wallet has been generated for you in your web browser and is displayed above.</p>
-					<p id="singletip2"><b>To safeguard this wallet</b> you must print or otherwise record the Riecoin address and private key. It is important to make a backup copy of the private key and store it in a safe location. This site does not have knowledge of your private key. If you are familiar with PGP you can download this all-in-one HTML page and check that you have an authentic version from the author of this site by matching the SHA1 hash of this HTML with the SHA1 hash available in the signed version history document linked on the footer of this site. If you leave/refresh the site or press the "Generate New Address" button then a new private key will be generated and the previously displayed private key will not be retrievable.	Your Bitcoin private key should be kept a secret. Whomever you share the private key with has access to spend all the bitcoins associated with that address. If you print your wallet then store it in a zip lock bag to keep it safe from water. Treat a paper wallet like cash.</p>
-					<p id="singletip3"><b>Add funds</b> to this wallet by instructing others to send bitcoins to your Riecoin address.</p>
+					<p id="singletip2"><b>To safeguard this wallet</b> you must print or otherwise record the Riecoin address and private key. It is important to make a backup copy of the private key and store it in a safe location. This site does not have knowledge of your private key. If you are familiar with PGP you can download this all-in-one HTML page and check that you have an authentic version from the author of this site by matching the SHA1 hash of this HTML with the SHA1 hash available in the signed version history document linked on the footer of this site. If you leave/refresh the site or press the "Generate New Address" button then a new private key will be generated and the previously displayed private key will not be retrievable.	Your Riecoin private key should be kept a secret. Whomever you share the private key with has access to spend all the Riecoins associated with that address. If you print your wallet then store it in a zip lock bag to keep it safe from water. Treat a paper wallet like cash.</p>
+					<p id="singletip3"><b>Add funds</b> to this wallet by instructing others to send Riecoins to your Riecoin address.</p>
 					<p id="singletip4"><b>Check your balance</b> by going to http://chainz.cryptoid.info/ric/ and entering your Riecoin address.</p>
-					<p id="singletip5"><b>Spend your riecoins</b> by going to qt client and sweep the full balance of your private key into your account at their website. You can also spend your funds by downloading one of the popular bitcoin p2p clients and importing your private key to the p2p client wallet. Keep in mind when you import your single key to a bitcoin p2p client and spend funds your key will be bundled with other private keys in the p2p client wallet. When you perform a transaction your change will be sent to another bitcoin address within the p2p client wallet. You must then backup the p2p client wallet and keep it safe as your remaining bitcoins will be stored there. Satoshi advised that one should never delete a wallet.</p>
+					<p id="singletip5"><b>Spend your riecoins</b> by going to qt client and sweep the full balance of your private key into your account at their website. You can also spend your funds by downloading one of the popular riecoin p2p clients and importing your private key to the p2p client wallet. Keep in mind when you import your single key to a riecoin p2p client and spend funds your key will be bundled with other private keys in the p2p client wallet. When you perform a transaction your change will be sent to another riecoin address within the p2p client wallet. You must then backup the p2p client wallet and keep it safe as your remaining riecoins will be stored there. Satoshi advised that one should never delete a wallet.</p>
 				</div>
 			</div>
 
@@ -6638,7 +6638,7 @@ body { font-family: Arial; }
 							<span id="bulklabelq1">Why should I use a Bulk Wallet to accept riecoins on my website?</span>
 							<div id="bulke1" class="more"></div>
 						</div>
-						<div id="bulka1" class="answer">The traditional approach to accepting riecoins on your website requires that you install the official bitcoin client daemon ("bitcoind"). Many website hosting packages don't support installing the bitcoin daemon. Also, running the bitcoin daemon on your web server means your private keys are hosted on the server and could get stolen if your web server is hacked. When using a Bulk Wallet you can upload only the bitcoin addresses and not the private keys to your web server. Then you don't have to worry about your riecoin wallet being stolen if your web server is hacked. </div>
+						<div id="bulka1" class="answer">The traditional approach to accepting riecoins on your website requires that you install the official riecoin client daemon ("riecoind"). Many website hosting packages don't support installing the Riecoin daemon. Also, running the Riecoin daemon on your web server means your private keys are hosted on the server and could get stolen if your web server is hacked. When using a Bulk Wallet you can upload only the Riecoin addresses and not the private keys to your web server. Then you don't have to worry about your riecoin wallet being stolen if your web server is hacked. </div>
 					</div>
 					<div id="bulkfaq2" class="faq"> 
 						<div id="bulkq2" class="question" onclick="ninja.wallets.bulkwallet.openCloseFaq(2);">
@@ -6647,10 +6647,10 @@ body { font-family: Arial; }
 						</div>
 						<div id="bulka2" class="answer">
 							<ol>
-							<li id="bulklabela2li1">Use the Bulk Wallet tab to pre-generate a large number of bitcoin addresses (10,000+). Copy and paste the generated comma separated values (CSV) list to a secure text file on your computer. Backup the file you just created to a secure location.</li>
-							<li id="bulklabela2li2">Import the riecoin addresses into a database table on your web server. (Don't put the wallet/private keys on your web server, otherwise you risk hackers stealing your coins. Just the bitcoin addresses as they will be shown to customers.)</li>
-							<li id="bulklabela2li3">Provide an option on your website's shopping cart for your customer to pay in Bitcoin. When the customer chooses to pay in Bitcoin you will then display one of the addresses from your database to the customer as his "payment address" and save it with his shopping cart order.</li>
-							<li id="bulklabela2li4">You now need to be notified when the payment arrives. Google "riecoin payment notification" and subscribe to at least one bitcoin payment notification service. There are various services that will notify you via Web Services, API, SMS, Email, etc. Once you receive this notification, which could be programmatically automated, you can process the customer's order. To manually check if a payment has arrived you can use Block Explorer. Replace THEADDRESSGOESHERE with the bitcoin address you are checking. It could take between 10 minutes to one hour for the transaction to be confirmed.<br />http://www.blockexplorer.com/address/THEADDRESSGOESHERE<br /><br />Unconfirmed transactions can be viewed at: http://blockchain.info/ <br />You should see the transaction there within 30 seconds.</li>
+							<li id="bulklabela2li1">Use the Bulk Wallet tab to pre-generate a large number of Riecoin addresses (10,000+). Copy and paste the generated comma separated values (CSV) list to a secure text file on your computer. Backup the file you just created to a secure location.</li>
+							<li id="bulklabela2li2">Import the riecoin addresses into a database table on your web server. (Don't put the wallet/private keys on your web server, otherwise you risk hackers stealing your coins. Just the riecoin addresses as they will be shown to customers.)</li>
+							<li id="bulklabela2li3">Provide an option on your website's shopping cart for your customer to pay in Riecoin. When the customer chooses to pay in Riecoin you will then display one of the addresses from your database to the customer as his "payment address" and save it with his shopping cart order.</li>
+							<li id="bulklabela2li4">You now need to be notified when the payment arrives. Google "riecoin payment notification" and subscribe to at least one riecoin payment notification service. There are various services that will notify you via Web Services, API, SMS, Email, etc. Once you receive this notification, which could be programmatically automated, you can process the customer's order. To manually check if a payment has arrived you can use Block Explorer. Replace THEADDRESSGOESHERE with the riecoin address you are checking. It could take between 10 minutes to one hour for the transaction to be confirmed.<br />http://www.blockexplorer.com/address/THEADDRESSGOESHERE<br /><br />Unconfirmed transactions can be viewed at: http://blockchain.info/ <br />You should see the transaction there within 30 seconds.</li>
 							<li id="bulklabela2li5">Riecoins will safely pile up on the block chain. Use the original wallet file you generated in step 1 to spend them.</li>
 							</ol>
 						</div>
@@ -6707,7 +6707,7 @@ body { font-family: Arial; }
 					<div>
 						<span class="label" id="vanitylabelstep1privatekey">Step 1 Private Key:</span>
 						<span class="output" id="vanityprivatekey"></span>
-						<br /><div class="notes" id="vanitylabelstep1privnotes">Copy and paste the above Private Key field into a text file. Ideally save to an encrypted drive. You will need this to retrieve the Bitcoin Private Key once the Pool has found your prefix.</div>
+						<br /><div class="notes" id="vanitylabelstep1privnotes">Copy and paste the above Private Key field into a text file. Ideally save to an encrypted drive. You will need this to retrieve the Riecoin Private Key once the Pool has found your prefix.</div>
 					</div>
 				</div>
 				<div id="vanitystep2label" class="expandable" onclick="ninja.wallets.vanitywallet.openCloseStep(2);">
@@ -6795,7 +6795,7 @@ body { font-family: Arial; }
 				</div>
 				<div id="detailkeyarea">
 					<div class="notes">
-						<span id="detaillabelnote1">Your Riecoin Private Key is a unique secret number that only you know. It can be encoded in a number of different formats. Below we show the Bitcoin Address and Public Key that corresponds to your Private Key as well as your Private Key in the most popular encoding formats (WIF, WIFC, HEX, B64, MINI).</span>
+						<span id="detaillabelnote1">Your Riecoin Private Key is a unique secret number that only you know. It can be encoded in a number of different formats. Below we show the Riecoin Address and Public Key that corresponds to your Private Key as well as your Private Key in the most popular encoding formats (WIF, WIFC, HEX, B64, MINI).</span>
 						<br /><br />
 						<span id="detaillabelnote2">Riecoin v0.6+ stores public keys in compressed format. The client now also supports import and export of private keys with importprivkey/dumpprivkey. The format of the exported private key is determined by whether the address was generated in an old or new wallet.</span>
 					</div>
@@ -6861,7 +6861,7 @@ body { font-family: Arial; }
 							<span id="detaillabelq1">How do I make a wallet using dice? What is B6?</span>
 							<div id="detaile1" class="more"></div>
 						</div>
-						<div id="detaila1" class="answer">An important part of creating a Bitcoin wallet is ensuring the random numbers used to create the wallet are truly random. Physical randomness is better than computer generated pseudo-randomness. The easiest way to generate physical randomness is with dice. To create a Bitcoin private key you only need one six sided die which you roll 99 times. Stopping each time to record the value of the die. When recording the values follow these rules: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. By doing this you are recording the big random number, your private key, in B6 or base 6 format. You can then enter the 99 character base 6 private key into the text field above and click View Details. You will then see the Bitcoin address associated with your private key. You should also make note of your private key in WIF format since it is more widely used.</div>
+						<div id="detaila1" class="answer">An important part of creating a Riecoin wallet is ensuring the random numbers used to create the wallet are truly random. Physical randomness is better than computer generated pseudo-randomness. The easiest way to generate physical randomness is with dice. To create a Riecoin private key you only need one six sided die which you roll 99 times. Stopping each time to record the value of the die. When recording the values follow these rules: 1=1, 2=2, 3=3, 4=4, 5=5, 6=0. By doing this you are recording the big random number, your private key, in B6 or base 6 format. You can then enter the 99 character base 6 private key into the text field above and click View Details. You will then see the Riecoin address associated with your private key. You should also make note of your private key in WIF format since it is more widely used.</div>
 					</div>
 				</div>
 			</div>

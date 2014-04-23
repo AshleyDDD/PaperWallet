@@ -1,5 +1,8 @@
-bitaddress.org
-JavaScript Client-Side Bitcoin Wallet Generator
+Riecoinfoundation.org/PaperWallet
+
+This is a fork of bitaddress.org
+
+JavaScript Client-Side Riecoin Wallet Generator
 
 Now Bitcoin addresses and their corresponding private key can be conveniently 
 generated in a web browser.
